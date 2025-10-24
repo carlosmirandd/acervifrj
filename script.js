@@ -151,21 +151,23 @@ function createPostCard(post) {
   });
 
   return `
-    <article class="post-card">
-      <img 
-        src="${post.coverImageUrl || 'https://via.placeholder.com/400x200?text=Sem+Imagem'}" 
-        alt="${post.title}"
-        class="post-cover"
-        loading="lazy"
-      >
-      <div class="post-content">
-        ${category ? `<span class="post-category">${category.name}</span>` : ''}
-        <h3 class="post-title">${post.title}</h3>
-        <p class="post-meta">
-          ${author ? `Por ${author.name} • ` : ''}${formattedDate}
-        </p>
-      </div>
-    </article>
+    <a href="post.html?id=${post.id}" class="post-card-link">
+      <article class="post-card">
+        <img
+          src="${post.coverImageUrl || 'https://via.placeholder.com/400x200?text=Sem+Imagem'}"
+          alt="${post.title}"
+          class="post-cover"
+          loading="lazy"
+        >
+        <div class="post-content">
+          ${category ? `<span class="post-category">${category.name}</span>` : ''}
+          <h3 class="post-title">${post.title}</h3>
+          <p class="post-meta">
+            ${author ? `Por ${author.name} • ` : ''}${formattedDate}
+          </p>
+        </div>
+      </article>
+    </a>
   `;
 }
 
