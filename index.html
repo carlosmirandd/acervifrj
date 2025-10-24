@@ -91,14 +91,15 @@
         </section>
 
         <!-- Categories Bar -->
-        <section class="categories-bar" id="categories-bar">
+        <section class="categories-bar" id="categorias">
             <div class="container">
-                <div class="categories-wrapper">
-                    <h3 class="categories-title">Categorias</h3>
-                    <div class="categories-list" id="categories-list">
-                        <!-- Categorias serão carregadas dinamicamente via JavaScript -->
-                        <div class="category-skeleton">Carregando categorias...</div>
-                    </div>
+                <h3 class="categories-title">Categorias</h3>
+                <div class="categories-list" id="categories-list">
+                    <!-- Skeletons -->
+                    <div class="category-skeleton"></div>
+                    <div class="category-skeleton"></div>
+                    <div class="category-skeleton"></div>
+                    <div class="category-skeleton"></div>
                 </div>
             </div>
         </section>
@@ -114,7 +115,14 @@
                 </div>
                 
                 <div class="posts-grid" id="important-posts-grid">
-                    <!-- Posts importantes serão carregados dinamicamente -->
+                    <!-- Skeletons -->
+                    <div class="post-skeleton">
+                        <div class="post-skeleton-image"></div>
+                        <div class="post-skeleton-content">
+                            <div class="post-skeleton-title"></div>
+                            <div class="post-skeleton-meta"></div>
+                        </div>
+                    </div>
                     <div class="post-skeleton">
                         <div class="post-skeleton-image"></div>
                         <div class="post-skeleton-content">
@@ -144,15 +152,8 @@
                 </div>
                 
                 <div class="posts-grid" id="recent-posts-grid">
-                    <!-- Posts recentes serão carregados dinamicamente -->
-                    <div class="post-skeleton">
-                        <div class="post-skeleton-image"></div>
-                        <div class="post-skeleton-content">
-                            <div class="post-skeleton-title"></div>
-                            <div class="post-skeleton-meta"></div>
-                        </div>
-                    </div>
-                    <div class="post-skeleton">
+                     <!-- Skeletons -->
+                     <div class="post-skeleton">
                         <div class="post-skeleton-image"></div>
                         <div class="post-skeleton-content">
                             <div class="post-skeleton-title"></div>
@@ -254,7 +255,6 @@
     <!-- Loading Overlay -->
     <div class="loading-overlay" id="loading-overlay">
         <div class="loading-spinner"></div>
-        <p>Carregando...</p>
     </div>
 
     <!-- JavaScript -->
