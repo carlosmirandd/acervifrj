@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Acadêmico - IFRJ Campus Niterói</title>
+    <meta name="description" content="Portal acadêmico do IFRJ Campus Niterói - Documentos, notícias e recursos para estudantes de Engenharia da Computação">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1><span class="logo-highlight">IFRJ</span> Portal</h1>
+                </div>
+                
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="#inicio" class="nav-link active">Início</a></li>
+                        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                        <li><a href="#categorias" class="nav-link">Categorias</a></li>
+                        <li><a href="#links" class="nav-link">Links Úteis</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu mobile">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="inicio">
+            <div class="hero-background"></div>
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Portal Acadêmico</h1>
+                    <h2 class="hero-subtitle">IFRJ Campus Niterói</h2>
+                    <p class="hero-description">
+                        Acesse documentos, notícias e recursos essenciais para o curso de Engenharia da Computação. 
+                        Tudo o que você precisa, organizado e sempre atualizado.
+                    </p>
+                    
+                    <div class="hero-search">
+                        <div class="search-wrapper">
+                            <input 
+                                type="text" 
+                                class="search-input" 
+                                id="search-input"
+                                placeholder="Buscar documentos, notícias..."
+                                aria-label="Campo de busca"
+                            >
+                            <button class="search-button" id="search-button" aria-label="Buscar">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <path d="m21 21-4.35-4.35"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <a href="#recent-posts" class="btn btn-primary">Ver Últimas Publicações</a>
+                        <a href="#important-posts" class="btn btn-secondary">Documentos Importantes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Bar -->
+        <section class="categories-bar" id="categories-bar">
+            <div class="container">
+                <div class="categories-wrapper">
+                    <h3 class="categories-title">Categorias</h3>
+                    <div class="categories-list" id="categories-list">
+                        <!-- Categorias serão carregadas dinamicamente via JavaScript -->
+                        <div class="category-skeleton">Carregando categorias...</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Important Posts Section -->
+        <section class="posts-section" id="important-posts">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Documentos Importantes</h2>
+                    <p class="section-description">
+                        Acesse os documentos mais importantes do curso, incluindo PPC, estrutura curricular e editais.
+                    </p>
+                </div>
+                
+                <div class="posts-grid" id="important-posts-grid">
+                    <!-- Posts importantes serão carregados dinamicamente -->
+                    <div class="post-skeleton">
+                        <div class="post-skeleton-image"></div>
+                        <div class="post-skeleton-content">
+                            <div class="post-skeleton-title"></div>
+                            <div class="post-skeleton-meta"></div>
+                        </div>
+                    </div>
+                    <div class="post-skeleton">
+                        <div class="post-skeleton-image"></div>
+                        <div class="post-skeleton-content">
+                            <div class="post-skeleton-title"></div>
+                            <div class="post-skeleton-meta"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Posts Section -->
+        <section class="posts-section posts-section-alt" id="recent-posts">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Mais Recentes</h2>
+                    <p class="section-description">
+                        Fique por dentro das últimas notícias, editais e atualizações do campus.
+                    </p>
+                </div>
+                
+                <div class="posts-grid" id="recent-posts-grid">
+                    <!-- Posts recentes serão carregados dinamicamente -->
+                    <div class="post-skeleton">
+                        <div class="post-skeleton-image"></div>
+                        <div class="post-skeleton-content">
+                            <div class="post-skeleton-title"></div>
+                            <div class="post-skeleton-meta"></div>
+                        </div>
+                    </div>
+                    <div class="post-skeleton">
+                        <div class="post-skeleton-image"></div>
+                        <div class="post-skeleton-content">
+                            <div class="post-skeleton-title"></div>
+                            <div class="post-skeleton-meta"></div>
+                        </div>
+                    </div>
+                    <div class="post-skeleton">
+                        <div class="post-skeleton-image"></div>
+                        <div class="post-skeleton-content">
+                            <div class="post-skeleton-title"></div>
+                            <div class="post-skeleton-meta"></div>
+                        </div>
+                    </div>
+                    <div class="post-skeleton">
+                        <div class="post-skeleton-image"></div>
+                        <div class="post-skeleton-content">
+                            <div class="post-skeleton-title"></div>
+                            <div class="post-skeleton-meta"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-footer">
+                    <a href="#" class="btn btn-outline">Ver Todos os Posts</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="sobre">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Sobre o Portal</h2>
+                        <p>
+                            O Portal Acadêmico do IFRJ Campus Niterói foi desenvolvido para centralizar 
+                            informações essenciais do curso de Engenharia da Computação, facilitando o 
+                            acesso a documentos, notícias e recursos importantes para a comunidade acadêmica.
+                        </p>
+                        <p>
+                            Aqui você encontra desde o Plano Pedagógico do Curso (PPC) até as mais recentes 
+                            oportunidades de estágio e processos seletivos, tudo organizado de forma clara e acessível.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" id="total-posts">-</div>
+                            <div class="stat-label">Publicações</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" id="total-categories">-</div>
+                            <div class="stat-label">Categorias</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2025</div>
+                            <div class="stat-label">Ano Atual</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="links">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Portal Acadêmico</h3>
+                    <p>IFRJ Campus Niterói</p>
+                    <p>Engenharia da Computação</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="https://portal.ifrj.edu.br" target="_blank" rel="noopener">Portal IFRJ</a></li>
+                        <li><a href="https://suap.ifrj.edu.br" target="_blank" rel="noopener">SUAP</a></li>
+                        <li><a href="https://moodle.ifrj.edu.br" target="_blank" rel="noopener">Moodle</a></li>
+                        <li><a href="#" id="admin-link">Área Administrativa</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Campus Niterói</p>
+                    <p>Rua Dr. Siqueira, 273</p>
+                    <p>Niterói - RJ</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 IFRJ Campus Niterói. Todos os direitos reservados.</p>
+                <p>Desenvolvido para a comunidade acadêmica</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-spinner"></div>
+        <p>Carregando...</p>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
