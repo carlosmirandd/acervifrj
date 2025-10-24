@@ -7,12 +7,13 @@
 // IMPORTANTE: Use as mesmas credenciais do script.js
 
 const firebaseConfig = {
-  apiKey: "SUA_API_KEY_AQUI",
-  authDomain: "seu-projeto.firebaseapp.com",
-  projectId: "seu-projeto-id",
-  storageBucket: "seu-projeto.appspot.com",
-  messagingSenderId: "123456789",
-  appId: "1:123456789:web:abcdef123456"
+  apiKey: "AIzaSyB1sxAAtkZGIRRMI5wMhZXvNZsNF9yoH1c",
+  authDomain: "acervifrj.firebaseapp.com",
+  projectId: "acervifrj",
+  storageBucket: "acervifrj.firebasestorage.app",
+  messagingSenderId: "552950386573",
+  appId: "1:552950386573:web:2761de2e72e40ae84fb7c4",
+  measurementId: "G-SRCDMC1VKQ"
 };
 
 // Descomentar após configurar Firebase
